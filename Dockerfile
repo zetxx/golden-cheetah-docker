@@ -26,6 +26,7 @@ RUN pacman -U --noconfirm /tmp/sip4/sip4-4.19.25-5-x86_64.pkg.tar.zst
 USER nobody
 RUN git clone https://aur.archlinux.org/golden-cheetah-git.git/ /tmp/gc
 WORKDIR /tmp/gc
+COPY gc/* /tmp/gc/
 RUN makepkg -s
 USER root
 RUN pacman -U --noconfirm /tmp/gc/golden-cheetah-git-v3.6.RC4.r24.103c87c60-1-x86_64.pkg.tar.zst
