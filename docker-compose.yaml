@@ -4,7 +4,7 @@ services:
   app:
     image: storage.zetxx.eu:5000/gc:latest
     environment:
-      - DISPLAY=${DISPLAY}
+      - DISPLAY=:0
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
     user: "1000:1000"

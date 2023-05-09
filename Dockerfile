@@ -38,7 +38,9 @@ rm /tmp/python-pip-23.0.1-1-any.pkg.tar.zst && \
 rm -r /var/cache/pacman/pkg/* && \
 rm -rf /tmp/qt5-webkit && \
 rm -rf /tmp/sip4 && \
-rm -rf /tmp/gc
+rm -rf /tmp/gc && \
+mkdir .goldencheetah && \
+chmod 0777 -R .goldencheetah
 
 USER nobody
 
