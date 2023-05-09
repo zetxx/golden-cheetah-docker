@@ -29,11 +29,11 @@ WORKDIR /tmp/gc
 COPY gc/* /tmp/gc/
 RUN makepkg -s
 USER root
-RUN makepkg --install
+RUN pacman -U --noconfirm /tmp/gc/golden-cheetah-git-v3.6.RC3.r1.67352f6dc-1-x86_64.pkg.tar.zst
 WORKDIR /tmp/
 RUN rm /tmp/qt5-webkit/qt5-webkit-5.212.0alpha4-18-x86_64.pkg.tar.zst && \
 rm /tmp/sip4/sip4-4.19.25-5-x86_64.pkg.tar.zst && \
-rm /tmp/gc/golden-cheetah-git-v3.6.RC4.r24.103c87c60-1-x86_64.pkg.tar.zst && \
+rm /tmp/gc/golden-cheetah-git-v3.6.RC3.r1.67352f6dc-1-x86_64.pkg.tar.zst && \
 rm /tmp/python-3.10.10-1-x86_64.pkg.tar.zst && \
 rm /tmp/python-pip-23.0.1-1-any.pkg.tar.zst && \
 rm -r /var/cache/pacman/pkg/* && \
