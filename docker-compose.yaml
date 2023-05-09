@@ -2,10 +2,11 @@ version: "3"
 
 services:
   app:
-    name: gc
+    container_name: gc
     image: storage.zetxx.eu:5000/gc:latest
     environment:
       - DISPLAY=:0
     volumes:
+      - /home/zetxx/.goldencheetah/:/.goldencheetah/
       - /tmp/.X11-unix:/tmp/.X11-unix
     user: "1000:1000"
