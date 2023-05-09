@@ -35,9 +35,9 @@ rm /tmp/gc/golden-cheetah-git-v3.6.RC4.r24.103c87c60-1-x86_64.pkg.tar.zst && \
 rm /tmp/python-3.10.10-1-x86_64.pkg.tar.zst && \
 rm /tmp/python-pip-23.0.1-1-any.pkg.tar.zst && \
 rm -r /var/cache/pacman/pkg/* && \
-rm -r /tmp/qt5-webkit && \
-rm -r /tmp/sip4 && \
-rm -r /tmp/gc
+rm -rf /tmp/qt5-webkit && \
+rm -rf /tmp/sip4 && \
+rm -rf /tmp/gc
 
 USER nobody
 
