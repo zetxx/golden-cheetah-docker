@@ -43,6 +43,4 @@ rm -rf /tmp/gc && \
 mkdir /.goldencheetah && \
 chmod 0777 -R /.goldencheetah
 
-USER nobody
-
 CMD ["/usr/bin/GoldenCheetah"]
